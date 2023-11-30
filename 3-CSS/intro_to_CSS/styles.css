@@ -1,0 +1,107 @@
+* {
+    font-family: Verdana;
+}
+
+span {
+    background-color: beige;
+}
+li {
+    background-color: red;
+}
+
+.listClass {
+    background-color:orange ;
+}
+
+#listId {
+    background-color: yellow;
+}
+
+li[value="list"] {
+    background-color: green;
+}
+
+.listClass1, .listClass2 {
+    background-color: skyblue;
+}
+
+/*The parent (ul) of .listClass*/
+ul .listClass3{
+    background-color: indigo;
+    color: white;
+}
+
+/* Pseudo-Classes */
+.hoverBtn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.activeBtn:active {
+    background-color: darkgray;
+    color: black;
+}
+
+.focusInput:focus {
+    background-color: skyblue;
+    border-width: 5px;
+}
+
+.vistedLink:visited {
+    color: red;
+}
+
+.firstLetter::first-letter{
+    font-size: 2em; /*em is a multiplication e.g: 2x bigger in this case*/
+}
+
+.firstLine::first-line{
+    color: blue;
+}
+
+.beforeAndAfter::before{
+    content: "before";
+    color: red;
+
+}
+
+.beforeAndAfter::after{
+    content: "after";
+    color: blue;
+
+}
+.price::before{
+    content: "$";
+    color: green;
+
+}
+
+.selectParts::selection{
+    background-color: crimson;
+}
+
+/*Earlier Rule*/
+.cascade {
+    color: red !important;
+}
+
+.cascade {
+    color: blue;
+}
+
+.boxModel {
+    background-color: beige;
+    border: burlywood 5px dotted;
+    border-style: ridge;
+    background-color: aliceblue;
+    /* 1 value = All Sides
+    2 Values = top and botom, right and left  
+    3 Values = top, right, and left, bottom
+    4 Values = top, right, bottom, left 
+    This also applies to padding!*/
+    margin: 10px 20px 30px 40px;
+    padding: 10px 0px 10px;
+   border-radius: 40px;  /* Make the border of the lines more rounded */
+   text-align: center;
+}
