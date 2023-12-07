@@ -17,13 +17,13 @@ while (true) {
 
 // Grading logic based on the entered score
 if (score < 60) {
-    console.log("You Recevied an F Grade");
+    console.log("You Recevied a F Grade");
 } else if (score >= 60 && score < 70) {
-    console.log("You Recevied an D Grade");
+    console.log("You Recevied a D Grade");
 } else if (score >= 70 && score < 80) {
-    console.log("You Recevied an C Grade");
+    console.log("You Recevied a C Grade");
 } else if (score >= 80 && score < 90) {
-    console.log("You Recevied an B Grade");
+    console.log("You Recevied a B Grade");
 } else {
-    console.log("You Recevied an A Grade");
+    console.log("You Recevied a A Grade");
 }
