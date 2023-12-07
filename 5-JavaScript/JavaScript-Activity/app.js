@@ -1,17 +1,21 @@
+// Initialize the variable to store the score entered by the user
 let score;
 
-//While Loop is to catch people entering Strings!
+// Loop to continually prompt the user for a valid score input
 while (true) {
+    // Prompt the user to enter the score and converts the input to an integer
     let input = prompt("Enter the score: ");
     score = parseInt(input);
 
-    if (!isNaN(score)) { //IsNan = Is Not a number
+    // Check if the input is a valid number
+    if (!isNaN(score)) { 
         break; // Exit the loop if a valid number is entered
     } else {
         console.log("Please enter a valid number for the score.");
     }
 }
 
+// Grading logic based on the entered score
 if (score < 60) {
     console.log("You Recevied an F Grade");
 } else if (score >= 60 && score < 70) {
